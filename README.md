@@ -52,7 +52,7 @@ Modeled lifetime value is sensitive to retention, margin, and horizon. It is not
 
 ## Team planning
 
-[![Illustrative planning reconstruction showing a compact monthly department-budget grid with fictional payroll, software, and operating-expense allocations.](screenshots/planning-departments.jpg)](screenshots/planning-departments.jpg)
+[![Illustrative planning reconstruction showing a compact monthly department-budget grid with fictional payroll, software, and operating-expense allocations, plus Tilde’s assistant icon.](screenshots/planning-departments.jpg)](screenshots/planning-departments.jpg)
 
 **The question:** How can teams review a monthly operating plan while keeping draft changes and accepted values clear?
 
@@ -61,6 +61,17 @@ Modeled lifetime value is sensitive to retention, margin, and horizon. It is not
 - Review requests and discussions in a separate, browser-local queue
 
 **Walkthrough:** Choose a team, inspect its monthly allocations, make a local annual adjustment, and compare operating scenarios. Review requests separately from the operating plan, and distinguish calculated operating results from the fixed cash snapshot.
+
+<img src="assets/tilde-avatar.png" alt="Tilde, a purple capybara with a black bow tie." width="40" height="40">
+
+**Assistant workflow · Model Context Protocol (MCP)**
+
+The underlying planning app includes an MCP integration that lets an external assistant find budget questions, inspect source cells and draft calculations, reply in the relevant discussion, and propose changes.
+
+- OAuth separates read, reply, and proposal permissions; retrieved context stays within the question’s authorized budget schedule
+- Proposed edits require the requester’s explicit opt-in, preserve formulas, and remain drafts pending human finance review
+
+Tilde’s icon marks the assistant entry point in this reconstruction. The demo guide is scripted and offline; it does not connect to the original MCP service.
 
 This is an **illustrative reconstruction** of a spreadsheet-first planning workflow, using independently invented data. It is not an exact production replica or a full-model recalculation engine. Cash is a cached synthetic forecast; local review decisions do not automatically change the plan.
 
