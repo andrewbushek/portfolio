@@ -2,7 +2,7 @@
 
 Four visual walkthroughs of financial tools, from receivables and cash planning to acquisition economics and shared household spending.
 
-**All figures, accounts, organizations, and people shown are fictional demo data.** This repository contains screenshots and project summaries only. Screenshots show the demo interfaces, including their original preview labels; references inside images to source packages do not describe this repository's contents.
+**All figures, accounts, organizations, and people shown are fictional demo data.** This repository contains screenshots and project summaries only.
 
 [AR aging](#ar-aging) · [Cash reporting](#cash-reporting) · [LTV / CAC](#ltv--cac) · [Household finance](#household-finance)
 
@@ -10,7 +10,7 @@ Select any screenshot to see it at full size.
 
 ## AR aging
 
-[![AR aging dashboard showing invoice-age buckets and a stacked open-receivables trend, using fictional data.](screenshots/ar-aging.jpg)](screenshots/ar-aging.jpg)
+[![AR aging dashboard showing invoice-age buckets and a stacked open-receivables trend, using fictional data.](screenshots/ar-aging.png)](screenshots/ar-aging.png)
 
 **The question:** Where is cash tied up, and which invoices need attention first?
 
@@ -24,7 +24,7 @@ The trend is illustrative demo history. Match candidates support human review an
 
 ## Cash reporting
 
-[![Cash reporting dashboard showing cash inflows, outflows, net change, and account balances, using fictional data.](screenshots/cash-report.jpg)](screenshots/cash-report.jpg)
+[![Cash reporting dashboard showing cash inflows, outflows, net change, and account balances, using fictional data.](screenshots/cash-report.png)](screenshots/cash-report.png)
 
 **The question:** What is available now, and how could cash change over the next 13 weeks?
 
@@ -38,7 +38,7 @@ Forecasts are assumption-driven illustrations. These visuals make no claim about
 
 ## LTV / CAC
 
-[![LTV and CAC working-papers dashboard showing acquisition cost, modeled lifetime value ratio, payback, and new-customer metrics, using fictional data.](screenshots/ltv-cac.jpg)](screenshots/ltv-cac.jpg)
+[![LTV and CAC working-papers dashboard showing acquisition cost, modeled lifetime value ratio, payback, and new-customer metrics, using fictional data.](screenshots/ltv-cac.png)](screenshots/ltv-cac.png)
 
 **The question:** Why do plausible acquisition-economics calculations give different answers?
 
