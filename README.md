@@ -1,10 +1,10 @@
 # Andrew Bushek · Finance & product portfolio
 
-Four visual walkthroughs of financial tools, from receivables and cash planning to acquisition economics and shared household spending.
+Five visual walkthroughs of financial tools, from receivables and cash planning to acquisition economics, team budgeting, and shared household spending.
 
 **All figures, accounts, organizations, and people shown are fictional demo data.** This repository contains screenshots and project summaries only.
 
-[AR aging](#ar-aging) · [Cash reporting](#cash-reporting) · [LTV / CAC](#ltv--cac) · [Household finance](#household-finance)
+[AR aging](#ar-aging) · [Cash reporting](#cash-reporting) · [LTV / CAC](#ltv--cac) · [Team planning](#team-planning) · [Household finance](#household-finance)
 
 Select any screenshot to see it at full size.
 
@@ -49,6 +49,20 @@ Forecasts are assumption-driven illustrations. These visuals make no claim about
 **Walkthrough:** Begin with the headline metrics, compare the three calculation bases, and follow a highlighted amount into its supporting detail. Use the methodology view to explain which population, timing, and assumptions each answer represents.
 
 Modeled lifetime value is sensitive to retention, margin, and horizon. It is not realized customer profit, and an immature cohort window is not a zero.
+
+## Team planning
+
+[![Illustrative planning reconstruction showing a compact monthly department-budget grid with fictional payroll, software, and operating-expense allocations.](screenshots/planning-departments.jpg)](screenshots/planning-departments.jpg)
+
+**The question:** How can teams review a monthly operating plan while keeping draft changes and accepted values clear?
+
+- Inspect compact monthly budgets in working, accepted, and what-if views
+- Explore simplified operating scenarios and prepaid schedules
+- Review requests and discussions in a separate, browser-local queue
+
+**Walkthrough:** Choose a team, inspect its monthly allocations, make a local annual adjustment, and compare operating scenarios. Review requests separately from the operating plan, and distinguish calculated operating results from the fixed cash snapshot.
+
+This is an **illustrative reconstruction** of a spreadsheet-first planning workflow, using independently invented data. It is not an exact production replica or a full-model recalculation engine. Cash is a cached synthetic forecast; local review decisions do not automatically change the plan.
 
 ## Household finance
 
