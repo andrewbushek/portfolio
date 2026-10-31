@@ -4,7 +4,7 @@ Five visual walkthroughs of financial tools, from receivables and cash planning 
 
 **All figures, accounts, organizations, and people shown are fictional demo data.** This repository contains screenshots and project summaries only.
 
-[AR aging](#ar-aging) · [Cash reporting](#cash-reporting) · [LTV / CAC](#ltv--cac) · [Team planning](#team-planning) · [Household finance](#household-finance)
+[AR aging](#ar-aging) · [Cash reporting](#cash-reporting) · [LTV / CAC](#ltv--cac) · [Team planning](#team-planning) · [Household finance](#household-finance) · [Behind the dashboards](#behind-the-dashboards)
 
 Select any screenshot to see it at full size.
 
@@ -93,6 +93,29 @@ This is an **illustrative reconstruction** of a spreadsheet-first planning workf
 <a href="screenshots/household-mobile.png"><img src="screenshots/household-mobile.png" alt="Mobile household-finance overview with responsive navigation, shared-spending cards, recent expenses, and split details; all data is fictional." width="390"></a>
 
 The household, merchants, trip, budget, and settlement amounts are entirely fictional.
+
+## Behind the dashboards
+
+The screens above sit on a set of automations that run every day. These are described rather than published, because the production code belongs to the companies it was built for.
+
+```
+QuickBooks · Stripe · HubSpot · Mercury · Gong
+                    │
+                    ▼
+          BigQuery + dbt + Python
+                    │
+   ┌──────────┬─────┴─────┬──────────┬──────────┐
+   ▼          ▼           ▼          ▼          ▼
+ Cash      Commis-    Multi-entity  Close    Revenue &
+ matching  sions      consolidation          call signals
+```
+
+- **Cash matching:** bank receipts scored against open invoices by amount, payer, and timing. Confident matches queue for approval and exceptions go to review. Nothing posts without sign-off.
+- **Commissions:** payouts calculated from CRM and billing data, with twice-monthly approval routing. An earlier version across five comp plans cut processing from five days to same-day.
+- **Multi-entity consolidation:** four source systems roll up across three legal entities into reconciled reporting packs.
+- **Close automation:** recurring entries and reconciliations prepared from the warehouse. Median journal-entry posting went from 11–15 days to 2.
+- **Revenue analytics:** ARR, retention, and cohort views that tie back to source transactions.
+- **Call signals:** sales-call transcripts scored for sentiment and buying signals in dbt, then written back to the CRM.
 
 ---
 
