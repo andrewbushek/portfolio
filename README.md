@@ -98,6 +98,8 @@ The household, merchants, trip, budget, and settlement amounts are entirely fict
 
 The screens above sit on a set of automations that run every day. These are described rather than published, because the production code belongs to the companies it was built for.
 
+[![Six automation visuals: cash matching, commissions approval chain, multi-entity consolidation, close curve, ARR bridge, and call signals, all with fictional data.](screenshots/behind-the-dashboards.png)](https://andrewbushek.github.io/#systems)
+
 ```
 QuickBooks · Stripe · HubSpot · Mercury · Gong
                     │
